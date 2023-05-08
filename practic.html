@@ -1,0 +1,26 @@
+      <div class="col-4">
+  <img src="images/pexels-pixabay-276534.jpg" alt="sofa"
+  data-image="images/pexels-pixabay-276534.jpg"
+  data-name="Lounge Chair 1"
+  data-price="₹5000.00"
+  />
+  <h4>Lounge Chair 1</h4>
+  <div class="rating">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+  </div>
+  <div class="price-cart">
+    <p>₹5000.00</p>
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+      <input type="hidden" name="name" value="Lounge Chair 1">
+      <input type="hidden" name="price" value="₹5000.00">
+      <button type="submit" class="btn"  name="buy" onclick="addToCart(event)">
+     Add to Cart
+</button>
+
+    </form>
+  </div>
+</div>
